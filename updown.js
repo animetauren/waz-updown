@@ -1,7 +1,7 @@
 // Simple wrapper over APIs for uploading and downloading blobs from Windows Azure Storage
 // by Jeff Wilcox. Apache 2 license, have fun with it.
 
-var   azure = require('azure')
+var   azure = require('azure-storage')
     , fs = require('fs');
 
 if (process.argv.length < 3) {
