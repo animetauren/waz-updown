@@ -48,7 +48,7 @@ blobService.createContainerIfNotExists(containerName, function(error){
         }
     }
 
-    blobService[upload ? 'createBlockBlobFromFile' : 'getBlobToFile'](
+    blobService[upload ? 'createBlockBlobFromLocalFile' : 'getBlobToFile'](
         containerName, 
         filename,
         filename, 
